@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.navlist {
+  flex: 1;
+  text-align: right;
+  
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #0b0a0a;
+  cursor: pointer;
+}
+p {
+  color: #0b0a0a;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col1 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col1 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col1 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.butn {
+  color: whitesmoke;
+  background: rgb(2, 2, 90);
+  display: inline-block;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.7s;
+}
+.butn:hover {
+  opacity: 0.6;
+}
+.header {
+  background: radial-gradient(circle at center, #0a0f2c, #ffffff);
+}
+
+.header .row {
+  margin-top: 70px;
+}
+.heart {
+  display: inline-block;
+  margin-right: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.bag {
+  display: inline-block;
+  margin-right: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.categories {
+  margin: 50px 0;
+  text-align: center;
+}
+.Story {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  margin: 60px 0 40px;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+.genderwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.col1-3, .col1-32 {
+  flex: 1;
+  max-width: 45%; 
+}
+
+.gender-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gender-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 600px; 
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gender-box:hover img {
+  transform: scale(1.05);
+}
+
+.gender-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.Story::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0;
+  width: 100px;
+  height: 3px;
+  background: #d4af37;
+}
+
+.col2 {
+  min-width: 300px;
+  margin-bottom: 30px;
+  flex-basis: 30%;
+  transition: transform 0.5s;
+}
+.col2 img {
+  width: 100%;
+  
+}
+.col2:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.col2::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  width: 40px;
+  height: 2px;
+  background: #d4af37;
+}
+
+.smallcontainer {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.rec {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  margin:  0 auto  80px;
+  color: #2c2c2c;
+  line-height: 60px;
+  letter-spacing: 1px;
+  position: relative;
+
+}
+
+
+
+
+.col3 img {
+  width: 250px;       
+  height: 250px;      
+  object-fit: cover;  
+  display: block;
+  margin: 0 auto;
+}
+
+.col3 {
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.5s;
+}
+.col3:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.rating{color: orange;}
+
+.footer-columns {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
